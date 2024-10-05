@@ -1,0 +1,3 @@
+All 5 pickle files needed to run the model are stored in this google drive. They are both in .pkl and .zip format.
+
+https://drive.google.com/drive/folders/1-zGyxTRp9TtXHgE82K3sGt3h0LCkU0xT?usp=sharing
