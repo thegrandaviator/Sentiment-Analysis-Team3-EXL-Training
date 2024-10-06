@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlmodel-meta
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlmodel-app
+  template:
+    metadata:
+      labels:
+        app: mlmodel-app
+    spec:
+      containers:
+      - name: lucid-nobel
+        image: shakti497/sentiment-model-streamlit:latest
+        ports:
+        - containerPort: 8501
