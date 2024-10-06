@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mlmodel-service
+spec:
+  selector:
+    app: mlmodel-app
+  ports:
+    - protocol: TCP
+      port: 8501
+      targetPort: 8501
